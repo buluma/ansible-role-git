@@ -21,14 +21,14 @@ This example is taken from `molecule/default/converge.yml` and is tested on each
     git_groupname: root
     git_repository_destination: /root
     git_repositories:
-      - repo: https://github.com/robertdebock/buluma.bootstrap
+      - repo: https://github.com/buluma/buluma.bootstrap
         dest: bootstrap
-      - repo: https://github.com/robertdebock/buluma.bootstrap
+      - repo: https://github.com/buluma/buluma.bootstrap
         dest: bootstrap-force
         force: yes
-      - repo: https://github.com/robertdebock/buluma.bootstrap
+      - repo: https://github.com/buluma/buluma.bootstrap
         dest: bootstrap-version
-        version: "2.11.1"
+        version: "1.0.8"
 
   roles:
     - role: buluma.git
