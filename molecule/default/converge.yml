@@ -16,7 +16,7 @@
         force: yes
       - repo: https://github.com/buluma/ansible-role-bootstrap
         dest: bootstrap-version
-        version: "1.0.8"
+        version: "v2.0.0"
 
   roles:
     - role: ansible-role-git

@@ -28,7 +28,7 @@ This example is taken from `molecule/default/converge.yml` and is tested on each
         force: yes
       - repo: https://github.com/buluma/buluma.bootstrap
         dest: bootstrap-version
-        version: "1.0.8"
+        version: "v2.0.0"
 
   roles:
     - role: buluma.git
