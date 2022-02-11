@@ -6,7 +6,7 @@ galaxy_info:
   description: Install and configure git on your system.
   license: Apache-2.0
   company: none
-  galaxy_info.github_branch: master
+  github_branch: master
   min_ansible_version: "2.10"
 
   platforms:
