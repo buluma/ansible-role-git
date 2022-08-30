@@ -62,8 +62,12 @@ The default values for the variables are set in `defaults/main.yml`:
 # git_groupname: "{{ git_username }}"
 
 # Settings for git configuration.
-# git_user_email: johndoe@example.com
-# git_user_name: John Doe
+# git_config:
+#   user:
+#     name: John Doe
+#     email: johndoe@example.com
+#   <setcion>:
+#     <key>: <value>
 
 # Where to place the copies of the repositories.
 git_repository_destination: /home/{{ git_username | default('unset') }}/Documents/github.com/{{ git_username | default('unset') }}
