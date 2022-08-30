@@ -17,6 +17,10 @@
       - repo: https://github.com/buluma/ansible-role-bootstrap
         dest: bootstrap-version
         version: "v2.0.0"
+    git_config:
+      user:
+        name: John Doe
+        email: johndoe@example.com
 
   roles:
     - role: ansible-role-git

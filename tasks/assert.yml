@@ -44,3 +44,12 @@
   when:
     - git_repositories is defined
     - item.force is defined
+
+- name: test if value in git_config.section is set correctly
+  ansible.builtin.assert:
+    that:
+      - item is defined
+    quiet: yes
+  with_items: "{{ git_config.items() }}"
+  when:
+    - git_config.items() is defined
