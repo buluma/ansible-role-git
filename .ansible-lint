@@ -13,6 +13,8 @@ exclude_paths:
   - ./.github
   - ./requirements.yml
 
-warn_list:  # or 'skip_list' to silence them completely
-  - internal-error  # Unexpected internal error
-  - fqcn-builtins  # Use FQCN for builtin actions.
+skip_list:
+  - yaml[truthy]
+
+enable_list:
+  - name[prefix]
