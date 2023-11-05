@@ -2,9 +2,9 @@
 
 Install and configure git on your system.
 
-|GitHub|GitLab|Quality|Downloads|Version|Issues|Pull Requests|
-|------|------|-------|---------|-------|------|-------------|
-|[![github](https://github.com/buluma/ansible-role-git/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-git/actions)|[![gitlab](https://gitlab.com/shadowwalker/ansible-role-git/badges/master/pipeline.svg)](https://gitlab.com/shadowwalker/ansible-role-git)|[![quality](https://img.shields.io/ansible/quality/54613)](https://galaxy.ansible.com/buluma/git)|[![downloads](https://img.shields.io/ansible/role/d/54613)](https://galaxy.ansible.com/buluma/git)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-git.svg)](https://github.com/buluma/ansible-role-git/releases/)|[![Issues](https://img.shields.io/github/issues/buluma/ansible-role-git.svg)](https://github.com/buluma/ansible-role-git/issues/)|[![PullRequests](https://img.shields.io/github/issues-pr-closed-raw/buluma/ansible-role-git.svg)](https://github.com/buluma/ansible-role-git/pulls/)|
+|GitHub|GitLab|Downloads|Version|Issues|Pull Requests|
+|------|------|-------|-------|------|-------------|
+|[![github](https://github.com/buluma/ansible-role-git/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-git/actions)|[![gitlab](https://gitlab.com/shadowwalker/ansible-role-git/badges/master/pipeline.svg)](https://gitlab.com/shadowwalker/ansible-role-git)|[![downloads](https://img.shields.io/ansible/role/d/4713)](https://galaxy.ansible.com/buluma/git)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-git.svg)](https://github.com/buluma/ansible-role-git/releases/)|[![Issues](https://img.shields.io/github/issues/buluma/ansible-role-git.svg)](https://github.com/buluma/ansible-role-git/issues/)|[![PullRequests](https://img.shields.io/github/issues-pr-closed-raw/buluma/ansible-role-git.svg)](https://github.com/buluma/ansible-role-git/pulls/)|
 
 ## [Example Playbook](#example-playbook)
 
