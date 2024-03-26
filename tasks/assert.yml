@@ -5,20 +5,20 @@
     that:
       - git_repository_destination is defined
       - git_repository_destination is string
-    quiet: yes
+    quiet: true
 
 - name: assert | Test if git_force is set correctly
   ansible.builtin.assert:
     that:
       - git_force is defined
       - git_force is boolean
-    quiet: yes
+    quiet: true
 
 - name: assert | Test if git_repositories is set correctly
   ansible.builtin.assert:
     that:
       - git_repositories is iterable
-    quiet: yes
+    quiet: true
   when:
     - git_repositories is defined
 
@@ -29,7 +29,7 @@
       - item.repo is string
       - item.dest is defined
       - item.dest is string
-    quiet: yes
+    quiet: true
   loop: "{{ git_repositories }}"
   loop_control:
     label: "{{ item.repo }}"
@@ -40,7 +40,7 @@
   ansible.builtin.assert:
     that:
       - item.version is boolean
-    quiet: yes
+    quiet: true
   when:
     - git_repositories is defined
     - item.force is defined
