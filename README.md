@@ -31,6 +31,11 @@ This example is taken from [`molecule/default/converge.yml`](https://github.com/
         dest: bootstrap-version
         version: "v2.0.0"
 
+  pre_tasks:
+    - name: Update apt cache.
+      apt: update_cache=true cache_valid_time=600
+      when: ansible_os_family == 'Debian'
+
   roles:
     - role: buluma.git
 ```
