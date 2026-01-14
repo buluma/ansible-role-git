@@ -35,7 +35,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Role
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
       - name: Run Ansible-lint
         uses: ansible/ansible-lint@v26.1.0
   test:
@@ -78,7 +78,7 @@ jobs:
             tag: "noble"
     steps:
       - name: Checkout Role
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           path: "${{ github.repository }}"
       - name: Running Molecule Test
