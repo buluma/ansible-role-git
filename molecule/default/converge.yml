@@ -24,4 +24,4 @@
       when: ansible_os_family == 'Debian'
 
   roles:
-    - role: ansible-role-git
+    - role: buluma.git
