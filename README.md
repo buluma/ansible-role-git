@@ -1,10 +1,10 @@
-# Ansible role [git](https://galaxy.ansible.com/ui/standalone/roles/buluma/git/documentation)
+# [Ansible role git](#ansible-role-git)
 
 Install and configure git on your system.
 
-|GitHub|Version|Issues|Pull Requests|Downloads|
-|------|-------|------|-------------|---------|
-|[![github](https://github.com/buluma/ansible-role-git/actions/workflows/molecule.yml/badge.svg)](https://github.com/buluma/ansible-role-git/actions/workflows/molecule.yml)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-git.svg)](https://github.com/buluma/ansible-role-git/releases/)|[![Issues](https://img.shields.io/github/issues/buluma/ansible-role-git.svg)](https://github.com/buluma/ansible-role-git/issues/)|[![PullRequests](https://img.shields.io/github/issues-pr-closed-raw/buluma/ansible-role-git.svg)](https://github.com/buluma/ansible-role-git/pulls/)|[![Ansible Role](https://img.shields.io/ansible/role/d/buluma/git)](https://galaxy.ansible.com/ui/standalone/roles/buluma/git/documentation)|
+|GitHub|GitLab|Downloads|Version|
+|------|------|---------|-------|
+|[![github](https://github.com/buluma/ansible-role-git/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-git/actions)|[![gitlab](https://gitlab.com/shadowwalker/ansible-role-git/badges/master/pipeline.svg)](https://gitlab.com/shadowwalker/ansible-role-git)|[![downloads](https://img.shields.io/ansible/role/d/buluma/git)](https://galaxy.ansible.com/buluma/git)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-git.svg)](https://github.com/buluma/ansible-role-git/releases/)|
 
 ## [Example Playbook](#example-playbook)
 
@@ -22,12 +22,12 @@ This example is taken from [`molecule/default/converge.yml`](https://github.com/
     git_groupname: root
     git_repository_destination: /root
     git_repositories:
-      - repo: https://github.com/buluma/buluma.bootstrap
+      - repo: https://github.com/buluma/ansible-role-bootstrap
         dest: bootstrap
-      - repo: https://github.com/buluma/buluma.bootstrap
+      - repo: https://github.com/buluma/ansible-role-bootstrap
         dest: bootstrap-force
         force: true
-      - repo: https://github.com/buluma/buluma.bootstrap
+      - repo: https://github.com/buluma/ansible-role-bootstrap
         dest: bootstrap-version
         version: "v2.0.0"
 
@@ -37,7 +37,7 @@ This example is taken from [`molecule/default/converge.yml`](https://github.com/
       when: ansible_os_family == 'Debian'
 
   roles:
-    - role: buluma.git
+    - role: ansible-role-git
 ```
 
 The machine needs to be prepared. In CI this is done using [`molecule/default/prepare.yml`](https://github.com/buluma/ansible-role-git/blob/master/molecule/default/prepare.yml):
@@ -101,16 +101,15 @@ git_force: false
 
 The following roles are used to prepare a system. You can prepare your system in another way.
 
-| Requirement | GitHub | Version |
+| Requirement | GitHub | GitLab |
 |-------------|--------|--------|
-|[buluma.bootstrap](https://galaxy.ansible.com/buluma/bootstrap)|[![Ansible Molecule](https://github.com/buluma/ansible-role-bootstrap/actions/workflows/molecule.yml/badge.svg)](https://github.com/buluma/ansible-role-bootstrap/actions/workflows/molecule.yml)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-bootstrap.svg)](https://github.com/shadowwalker/ansible-role-bootstrap)|
+|[buluma.bootstrap](https://galaxy.ansible.com/buluma/bootstrap)|[![Build Status GitHub](https://github.com/buluma/ansible-role-bootstrap/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-bootstrap/actions)|[![Build Status GitLab](https://gitlab.com/shadowwalker/ansible-role-bootstrap/badges/master/pipeline.svg)](https://gitlab.com/shadowwalker/ansible-role-bootstrap)|
 
 ## [Context](#context)
 
-This role is a part of many compatible roles. Have a look at [the documentation of these roles](https://buluma.github.io/) for further information.
+This role is part of many compatible roles. Have a look at [the documentation of these roles](https://buluma.github.io/) for further information.
 
 Here is an overview of related roles:
-
 ![dependencies](https://raw.githubusercontent.com/buluma/ansible-role-git/png/requirements.png "Dependencies")
 
 ## [Compatibility](#compatibility)
@@ -127,22 +126,19 @@ This role has been tested on these [container images](https://hub.docker.com/u/b
 |[opensuse](https://hub.docker.com/r/buluma/opensuse)|all|
 |[Ubuntu](https://hub.docker.com/r/buluma/ubuntu)|all|
 
-The minimum version of Ansible required is 2.12, tests have been done to:
+The minimum version of Ansible required is 2.12, tests have been done on:
 
 - The previous version.
 - The current version.
 - The development version.
 
-If you find issues, please register them in [GitHub](https://github.com/buluma/ansible-role-git/issues)
-
-## [Changelog](#changelog)
-
-[Role History](https://github.com/buluma/ansible-role-git/blob/master/CHANGELOG.md)
+If you find issues, please register them on [GitHub](https://github.com/buluma/ansible-role-git/issues).
 
 ## [License](#license)
 
-[Apache-2.0](https://github.com/buluma/ansible-role-git/blob/master/LICENSE)
+[Apache-2.0](https://github.com/buluma/ansible-role-git/blob/master/LICENSE).
 
 ## [Author Information](#author-information)
 
-[Shadow Walker](https://buluma.github.io/)
+[buluma](https://buluma.github.io/)
+
