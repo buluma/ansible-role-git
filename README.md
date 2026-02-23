@@ -12,46 +12,46 @@ This example is taken from [`molecule/default/converge.yml`](https://github.com/
 
 ```yaml
 ---
-  - name: Converge
-    hosts: all
-    become: true
-    gather_facts: true
+- name: Converge
+  hosts: all
+  become: true
+  gather_facts: true
 
-    vars:
-      git_username: root
-      git_groupname: root
-      git_repository_destination: /root
-      git_repositories:
-        - repo: https://github.com/buluma/ansible-role-bootstrap
-          dest: bootstrap
-        - repo: https://github.com/buluma/ansible-role-bootstrap
-          dest: bootstrap-force
-          force: true
-        - repo: https://github.com/buluma/ansible-role-bootstrap
-          dest: bootstrap-version
-          version: "v2.0.0"
+  vars:
+    git_username: root
+    git_groupname: root
+    git_repository_destination: /root
+    git_repositories:
+    - repo: https://github.com/buluma/ansible-role-bootstrap
+      dest: bootstrap
+    - repo: https://github.com/buluma/ansible-role-bootstrap
+      dest: bootstrap-force
+      force: true
+    - repo: https://github.com/buluma/ansible-role-bootstrap
+      dest: bootstrap-version
+      version: "v2.0.0"
 
-    pre_tasks:
-      - name: Update apt cache.
-        apt: update_cache=true cache_valid_time=600
-        when: ansible_os_family == 'Debian'
+  pre_tasks:
+  - name: Update apt cache.
+    apt: update_cache=true cache_valid_time=600
+    when: ansible_os_family == 'Debian'
 
-    roles:
-      - role: buluma.git
+  roles:
+  - role: buluma.git
 ```
 
 The machine needs to be prepared. In CI this is done using [`molecule/default/prepare.yml`](https://github.com/buluma/ansible-role-git/blob/master/molecule/default/prepare.yml):
 
 ```yaml
 ---
-  - name: Prepare
-    hosts: all
-    gather_facts: false
-    become: true
-    serial: 30%
+- name: Prepare
+  hosts: all
+  gather_facts: false
+  become: true
+  serial: 30%
 
-    roles:
-      - role: buluma.bootstrap
+  roles:
+  - role: buluma.bootstrap
 ```
 
 Also see a [full explanation and example](https://buluma.github.io/how-to-use-these-roles.html) on how to use these roles.
