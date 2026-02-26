@@ -75,8 +75,7 @@ The default values for the variables are set in [`defaults/main.yml`](https://gi
 # git_user_name: John Doe
 
 # Where to place the copies of the repositories.
-git_repository_destination: /home/{{ git_username | default('unset') 
-  }}/Documents/github.com/{{ git_username | default('unset') }}
+git_repository_destination: /home/{{ git_username | default('unset') }}/Documents/github.com/{{ git_username | default('unset') }}
 
 # Should git force (overwrite locally changed) clone? (Can also be controlled
 # per repository, see below.
