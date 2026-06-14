@@ -28,3 +28,14 @@ git_force: false
 #   - repo: ssh://git@github.com/robertdebock/ansible-role-tomcat.git
 #     dest: tomcat
 #     force: true
+
+# A list of dictionaries for custom git configuration sections and key/value pairs.
+# Example:
+# git_config:
+#   - section: alias
+#     options:
+#       - key: st
+#         value: status
+#       - key: co
+#         value: checkout
+git_config: []
